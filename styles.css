@@ -1,18 +1,35 @@
 #game {
-  background: rgb(10, 18, 21);
-  width: 80vmin;
-  height: 80vmin;
-  margin: 10vmin auto;
+  width: 70vmin;
+  height: 70vmin;
+  margin: 10vmin auto 2vmin auto;
+  background: purple;
+  border-radius: 10px;
   position: relative;
+
+  #ball {
+    width: 6%;
+    height: 6%;
+    position: absolute;
+    left: 50%;
+    top: 97%;
+    border-radius: 100%;
+    background: white;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 
-#ball {
-  border-radius: 100%;
-  width: 4%;
-  height: 4%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  background: pink;
+#powerbar {
+  width: 70vmin;
+  height: 10vmin;
+  margin: 0 auto;
+  background: white;
+  border: 2px solid blue;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+
+  #powerbar-fill {
+    width: 20%;
+    background: blue;
+  }
 }
